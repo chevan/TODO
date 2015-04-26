@@ -1,33 +1,69 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>yo whassup</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  	<title>ToDo-Tracker</title>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
-<body>
+  <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">HAYVAN</a>
-    </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Create TODO</a></li>
-        <li class="active"><a href="#">How to edit</a></li>
-        <li><a href="#">Impressum</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<p> This is how you edit TODOs:</p>
-
-
-</body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+   			<div class="navbar-header">
+   			<a class="navbar-brand" href="#">ToDo-Tracker</a>
+   			</div>
+ 			<div>
+       			<ul class="nav navbar-nav">
+					<li><a href="website.html">Overview</a></li>
+          			<li><a href="create.html">Create</a></li>
+          			<li class="active"><a href="edit.html">Edit</a></li>
+          			<li><a href="impressum.html">Contact</a></li>
+       			</ul>
+      			</div>
+    		</div>
+  	</nav>
+  
+  <div class="container">
+  <h2> Edit a ToDo</h2>
+  	<div class="form-group">
+  		<label for="choose">Choose a TODO:</label>
+  		 <p>
+		 <div class="dropdown">
+  			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" arua-expanded="true">choose
+  			<span class="caret"></span>
+			</button>
+  			<ul class="dropdown-menu" role="menu">
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Collect data</a></li>
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Data analysis</a></li>
+    					<li role="presentation"><a role="menuitem" tabindex="-1"  href="#">Cutting</a></li>
+			</ul>
+		</div>
+		</p>
+			<label for="name">Name:</label>
+			<div class="form-group">
+      			<input type="text" class="form-control" id="name" placeholder="Enter a new ToDo name">
+    		</div>
+			<label>Description:</label>
+		<div class="form-group">
+      			<textarea class="form-control" rows="3" placeholder="Enter a new description with less than 160 words"></textarea>
+    		</div>
+			<label>Deadline:</label>
+			<div class="form-group">
+      			<input type="text" class="form-control" placeholder="Enter a new deadline">
+			</div>
+		<p></p>
+			<label>Progress:</label>
+			<div class="input-group">
+      			<input type="text" class="form-control" placeholder="Enter a new progress percentage" aria-describedby="basic-addon">
+				<span class="input-group-addon" id="basic-addon">%</span>
+			</div>
+		<p></p>
+    			<button type="submit" class="btn btn-default">Save</button>
+		</div>
+	</div>
+  
+  </body>
 </html>
